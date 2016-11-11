@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning</title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    .container{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+    <input type="text" id="AddOne">
+      +
+    <input type="text" id="AddTwo">
+    <button type="button" onclick="adding()">=</button>
+    <div id="AddSum"></div>
+  </form>
+
+  <input type="text" id="MinOne">
+  -
+  <input type="text" id="MinTwo">
+  <button type="button" onclick="subtracting()">=</button>
+  <div id="MinDiff"></div>
+
+
+
+<div class="container">
+  <!-- Adding -->
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="AddOne">First number:</label>
+      <input type="text" class="form-control" id="AddOne" placeholder="First number">
+    </div>
+    <div class="form-group">
+      <label> + </label>
+    </div>
+    <div class="form-group">
+      <label for="AddTwo">Second number:</label>
+      <input type="text" class="form-control" id="AddTwo" placeholder="Second number">
+    </div>
+    <button type="button" class="btn btn-primary" onclick="adding()">=</button>
+    <div id="AddSum"></div>
+  </form>
+
+  <!-- Subtracting -->
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="MinOne">First number:</label>
+      <input type="text" class="form-control" id="MinOne" placeholder="First number">
+    </div>
+    <div class="form-group">
+      <label> - </label>
+    </div>
+    <div class="form-group">
+      <label for="MinTwo"> Second number:</label>
+      <input type="text" class="form-control" id="MinTwo" placeholder="Second number">
+    </div>
+    <button type="button" class="btn btn-primary" onclick="subtracting()">=</button>
+    <div id="MinDiff"></div>
+  </form>
+</div>
+
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="../bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+  <script src="math.js" charset="utf-8"></script>
+</body>
+</html>
