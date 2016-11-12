@@ -1,0 +1,40 @@
+<!doctype HTML>
+<html>
+  <head>
+    <title>Vue.JS</title>
+  </head>
+<body>
+
+  <div id="app">
+    {{ message }}
+    {{ date }}
+  </div>
+
+  <div id="app-2">
+    <span v-bind:title="message">
+      Hover your mouse over me to see my bound title!
+    </span>
+  </div>
+
+  <div id="app-3">
+    <p v-if="seen">You see me now</p>
+  </div>
+
+  <div id="app-4">
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
+  </div>
+
+  <div id="app-5">
+    <p>{{ message }}</p>
+    <button v-on:click="ReverseMessage">Reverse Message</button>
+  </div>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="main.js" charset="utf-8"></script>
+</body>
+</html>
